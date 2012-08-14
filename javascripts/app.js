@@ -1,8 +1,9 @@
 (function() {
 
   jQuery(function() {
-    var DAYS_OF_THE_WEEK, MONTHS, handleChange, handleKeyPress, one_day;
-    one_day = 60 * 60 * 25 * 1000;
+    var DAYS_OF_THE_WEEK, MONTHS, handleChange, handleKeyPress, hourlyUpdate, one_day, one_hour;
+    one_hour = 60 * 60 * 1000;
+    one_day = 24 * one_hour;
     DAYS_OF_THE_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     handleChange = function() {
@@ -26,7 +27,11 @@
         return $(this).change();
       }
     };
-    return $("#number-of-days").focus().change(handleChange).keypress(handleKeyPress).keyup(handleChange).change();
+    hourlyUpdate = function() {
+      return $("#number-of-days").change();
+    };
+    $("#number-of-days").focus().change(handleChange).keypress(handleKeyPress).keyup(handleChange).change();
+    return window.setInterval(hourlyUpdate, one_hour);
   });
 
 }).call(this);

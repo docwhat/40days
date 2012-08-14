@@ -1,6 +1,7 @@
 
 jQuery ->
-  one_day = 60 * 60 * 25 * 1000
+  one_hour = 60 * 60 * 1000
+  one_day = 24 * one_hour
 
   DAYS_OF_THE_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -22,6 +23,9 @@ jQuery ->
       event.preventDefault()
       $(this).change()
 
+  hourlyUpdate = ->
+    $("#number-of-days").change()
+
   $("#number-of-days")
     .focus()
     .change(handleChange)
@@ -29,4 +33,5 @@ jQuery ->
     .keyup(handleChange)
     .change()
 
+  window.setInterval hourlyUpdate, one_hour
 
