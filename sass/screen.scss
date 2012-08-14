@@ -4,3 +4,61 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+body, input {
+  background: white;
+  color: #333;
+  font-family: Arial,Verdana,sans-serif;
+}
+
+#main {
+  font-size: 2em;
+  margin: 3em 1em;
+  #number-of-days {
+    font-size: 1em;
+    width: 3em;
+    border: 2px solid #ddd;
+    text-align: center;
+  }
+  #future-date {
+    color: #009;
+  }
+
+  .left50, .right50 {
+    width: 50%;
+    line-height: 2em;
+  }
+
+  .left50 {
+    float: left;
+    text-align: right;
+  }
+  .right50 {
+    float: right;
+    text-align: left;
+  }
+}
+
+#main:before,
+#main:after {
+    content:"";
+    display:table;
+}
+#main:after {
+    clear:both;
+}
+#main {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#footer {
+  margin: 4em 1em 0em;
+  font-size: 0.8em;
+  text-align: right;
+  font-family: menlo, monospace;
+  a.link {
+    text-decoration: none;
+    color: #0d0;
+  }
+}
+

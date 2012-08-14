@@ -8,6 +8,7 @@ gem 'guard'
 gem 'guard-compass'
 gem 'guard-coffeescript'
 #gem 'guard-livereload'
+#gem 'rack-livereload'
 #gem 'guard-process'
 
 #For detecting changes in the filesystem

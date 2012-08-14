@@ -1,9 +1,12 @@
-guard 'compass' do
-  watch(/^src\/(.*)\.s[ac]ss/)
-end
-
-#guard 'process', :name => 'minify-js', :command => 'juicer merge js/all.js -o js/all.min.js --force -s' do
-  #watch '^*'
+#guard 'livereload' do
+  #watch(%r{javascripts/.+\.js})
+  #watch(%r{stylesheets/.+\.css})
+  #watch(%r{index\.html})
 #end
 
+guard 'compass' do
+  watch(/^sass\/(.*)\.s[ac]ss/)
+end
+
 guard 'coffeescript', :input => 'coffeescripts', :output => 'javascripts'
+

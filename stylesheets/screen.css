@@ -66,3 +66,73 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 8, ../sass/screen.scss */
+body, input {
+  background: white;
+  color: #333;
+  font-family: Arial,Verdana,sans-serif;
+}
+
+/* line 14, ../sass/screen.scss */
+#main {
+  font-size: 2em;
+  margin: 3em 1em;
+}
+/* line 17, ../sass/screen.scss */
+#main #number-of-days {
+  font-size: 1em;
+  width: 3em;
+  border: 2px solid #ddd;
+  text-align: center;
+}
+/* line 23, ../sass/screen.scss */
+#main #future-date {
+  color: #009;
+}
+/* line 27, ../sass/screen.scss */
+#main .left50, #main .right50 {
+  width: 50%;
+  line-height: 2em;
+}
+/* line 32, ../sass/screen.scss */
+#main .left50 {
+  float: left;
+  text-align: right;
+}
+/* line 36, ../sass/screen.scss */
+#main .right50 {
+  float: right;
+  text-align: left;
+}
+
+/* line 43, ../sass/screen.scss */
+#main:before,
+#main:after {
+  content: "";
+  display: table;
+}
+
+/* line 47, ../sass/screen.scss */
+#main:after {
+  clear: both;
+}
+
+/* line 50, ../sass/screen.scss */
+#main {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 54, ../sass/screen.scss */
+#footer {
+  margin: 4em 1em 0em;
+  font-size: 0.8em;
+  text-align: right;
+  font-family: menlo, monospace;
+}
+/* line 59, ../sass/screen.scss */
+#footer a.link {
+  text-decoration: none;
+  color: #0d0;
+}
