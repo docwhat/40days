@@ -76,7 +76,7 @@ body, input {
 
 /* line 14, ../sass/screen.scss */
 #main {
-  font-size: 2em;
+  font-size: 20px;
   margin: 3em 1em;
 }
 /* line 17, ../sass/screen.scss */
@@ -127,7 +127,7 @@ body, input {
 /* line 54, ../sass/screen.scss */
 #footer {
   margin: 4em 1em 0em;
-  font-size: 0.8em;
+  font-size: 12px;
   text-align: right;
   font-family: menlo, monospace;
 }
