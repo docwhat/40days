@@ -49,7 +49,7 @@ jQuery ->
     year = future_date.getFullYear()
     $('#future-date').text(week_day + ", " + month + " " + day_of_month + ", " + year)
 
-  handleKeyDown = ->
+  handleKeyDown = (event) ->
     adjust = 0
     if event.keyCode == 38 # Up
       adjust = 1
@@ -69,7 +69,7 @@ jQuery ->
         event.preventDefault()
         $(this).change()
 
-  handleKeyPress = ->
+  handleKeyPress = (event) ->
     char = String.fromCharCode event.keyCode
     if !char.match(/^[0-9]?$/)
       event.preventDefault()

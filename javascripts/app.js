@@ -20,7 +20,7 @@
       year = future_date.getFullYear();
       return $('#future-date').text(week_day + ", " + month + " " + day_of_month + ", " + year);
     };
-    handleKeyDown = function() {
+    handleKeyDown = function(event) {
       var adjust, new_value;
       adjust = 0;
       if (event.keyCode === 38) {
@@ -44,7 +44,7 @@
         }
       }
     };
-    handleKeyPress = function() {
+    handleKeyPress = function(event) {
       var char;
       char = String.fromCharCode(event.keyCode);
       if (!char.match(/^[0-9]?$/)) {
