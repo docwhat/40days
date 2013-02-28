@@ -87,8 +87,7 @@ kbd
   font-size: 0.70em;
   text-align: right;
   font-family: menlo, monospace;
-  a.link {
-    text-decoration: none;
-    color: #0d0;
+  a:link, a:visited {
+    color: blue;
   }
 }

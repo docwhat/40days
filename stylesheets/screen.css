@@ -163,7 +163,6 @@ kbd {
   font-family: menlo, monospace;
 }
 /* line 90, ../sass/screen.scss */
-#footer a.link {
-  text-decoration: none;
-  color: #0d0;
+#footer a:link, #footer a:visited {
+  color: blue;
 }
