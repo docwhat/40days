@@ -11,49 +11,80 @@ body, input {
   font-family: Arial,Verdana,sans-serif;
 }
 
+kbd
+{
+  -moz-border-radius:3px;
+  -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  -webkit-border-radius:3px;
+  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  background-color:#f7f7f7;
+  border:1px solid #ccc;
+  border-radius:3px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  color:#333;
+  display:inline-block;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  line-height:1.4;
+  margin:0 .1em;
+  padding:.1em .6em;
+  text-shadow:0 1px 0 #fff;
+}
+
 #main {
   font-size: 20px;
   margin: 3em 1em;
   #number-of-days {
     font-size: 1em;
     width: 3em;
-    border: 2px solid #ddd;
+    border: 2px solid #eee;
     text-align: center;
+    &:focus {
+      outline: none;
+      border: 2px solid #def;
+    }
   }
   #future-date {
     color: #009;
+    white-space: nowrap;
   }
 
-  .left50, .right50 {
-    width: 50%;
-    line-height: 2em;
-  }
+}
 
-  .left50 {
-    float: left;
-    text-align: right;
-  }
-  .right50 {
-    float: right;
-    text-align: left;
-  }
+.instructions {
+  margin: 5em 3em;
+  font-size: 0.86em;
+  font-style: italic;
+  color: #666;
+}
+
+.touch .instructions {
+  display: none;
 }
 
 #main:before,
 #main:after {
-    content:"";
-    display:table;
+  content:"";
+  display:table;
 }
 #main:after {
-    clear:both;
+  clear:both;
 }
 #main {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+  text-align: center;
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 #footer {
-  margin: 4em 1em 0em;
-  font-size: 12px;
+  /* Stick it to bottom */
+  clear:both;
+  position:fixed;
+  width:100%;
+  height:1em;
+  bottom:1em;
+  right: 1em;
+
+  font-size: 0.70em;
   text-align: right;
   font-family: menlo, monospace;
   a.link {
@@ -61,4 +92,3 @@ body, input {
     color: #0d0;
   }
 }
-
