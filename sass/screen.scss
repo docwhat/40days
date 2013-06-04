@@ -19,44 +19,44 @@
 // SOFTWARE.
 
 @import "compass/reset";
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$basefont: 'Open Sans', 'Arial', sans-serif;
 
 body, input {
   background: white;
   color: #333;
-  font-family: Arial,Verdana,sans-serif;
+  font-family: $basefont;
 }
 
 kbd
 {
-  -moz-border-radius:3px;
-  -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-  -webkit-border-radius:3px;
-  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  @include border-radius(0.1em);
+  @include box-shadow(rgba(0,0,0,0.2) 0 0.1em 0,#fff 0 0 0 0.2em inset);
   background-color:#f7f7f7;
-  border:1px solid #ccc;
-  border-radius:3px;
-  box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  border: 0.1em solid #ccc;
   color:#333;
-  display:inline-block;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:11px;
+  display: inline-block;
+  font-size: 0.7em;
   line-height:1.4;
   margin:0 .1em;
   padding:.1em .6em;
-  text-shadow:0 1px 0 #fff;
+  text-shadow:0 0.2em 0 #fff;
 }
 
 #main {
-  font-size: 20px;
+  font-size: 1.2em;
   margin: 3em 1em;
   #number-of-days {
     font-size: 1em;
     width: 3em;
-    border: 2px solid #eee;
+    border: 0.2em solid #eee;
+    @include border-radius(0.3em);
     text-align: center;
     &:focus {
       outline: none;
-      border: 2px solid #def;
+      border-color: #def;
     }
   }
   #future-date {
