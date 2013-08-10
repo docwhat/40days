@@ -1,5 +1,4 @@
 (function() {
-
   jQuery(function() {
     var DAYS_OF_THE_WEEK, MONTHS, handleChange, handleKeyDown, handleKeyPress, hourlyUpdate, one_day, one_hour;
     one_hour = 60 * 60 * 1000;
