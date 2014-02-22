@@ -1,5 +1,7 @@
 # 40days
 
+[![Code Climate](https://codeclimate.com/github/docwhat/40days.png)](https://codeclimate.com/github/docwhat/40days)
+
 This application is a simple web page app to show you what date it is
 40 (or any number) in the future.
 
