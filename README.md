@@ -9,7 +9,7 @@ It is written using [coffeescript](http://coffeescript.org/) and [scss](http://s
 
 ## Demo
 
-You can see it in action at [docwhat.github.com/40days](http://docwhat.github.com/40days).
+You can see it in action at [docwhat.github.io/40days](http://docwhat.github.io/40days/).
 
 ## License
 
