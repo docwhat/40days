@@ -3,15 +3,17 @@ source 'https://rubygems.org'
 # Compiling
 gem 'compass'
 
-# Guard
-gem 'guard'
-gem 'guard-compass'
-gem 'guard-coffeescript'
+group :development do
+  # Guard
+  gem 'guard', require: false
+  gem 'guard-coffeescript', require: false
+  gem 'guard-compass', require: false
 
-#For detecting changes in the filesystem
-gem 'rb-inotify', :require => false
-gem 'rb-fsevent', :require => false
+  # For detecting changes in the filesystem
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
 
-#For displaying notices
-gem 'growl', :require => false
-gem 'libnotify', :require => false
+  # For displaying notices
+  gem 'growl', require: false
+  gem 'libnotify', require: false
+end

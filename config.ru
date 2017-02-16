@@ -1,8 +1,8 @@
 require 'rack'
 
-use Rack::Static, urls: ["/javascripts", "/stylesheets"]
+use Rack::Static, urls: ['/javascripts', '/stylesheets']
 
-run lambda { |env|
+run lambda { |_env|
   [
     200,
     {
