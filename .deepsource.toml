@@ -1,5 +1,7 @@
 version = 1
 
+exclude_patterns = ["javascripts/modernizr.js"]
+
 [[analyzers]]
 name = "ruby"
 enabled = true
