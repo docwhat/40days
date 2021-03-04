@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ff5f12f7da5649599b4aaf433488e997)](https://www.codacy.com/app/docwhat/40days?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=docwhat/40days&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ff5f12f7da5649599b4aaf433488e997)](https://www.codacy.com/app/docwhat/40days?utm_source=github.com&utm_medium=referral&utm_content=docwhat/40days&utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/docwhat/40days.png)](https://codeclimate.com/github/docwhat/40days)
 
 # 40days
