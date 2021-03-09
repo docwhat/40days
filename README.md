@@ -11,3 +11,7 @@ It is written using [coffeescript](http://coffeescript.org/) and [scss](http://s
 ## Demo
 
 You can see it in action at [docwhat.github.io/40days](http://docwhat.github.io/40days/).
+
+## See Also
+
+I have written an article about 40days called [_40days - Simple isn't easy_](https://docwhat.org/40days-simple-isnt-easy).
