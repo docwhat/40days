@@ -1,12 +1,40 @@
-(function() {
-  jQuery(function() {
-    var DAYS_OF_THE_WEEK, MONTHS, handleChange, handleKeyDown, handleKeyPress, hourlyUpdate, one_day, one_hour;
+(function () {
+  jQuery(function () {
+    let DAYS_OF_THE_WEEK,
+      MONTHS,
+      handleChange,
+      handleKeyDown,
+      handleKeyPress,
+      hourlyUpdate,
+      one_day,
+      one_hour;
     one_hour = 60 * 60 * 1000;
     one_day = 24 * one_hour;
-    DAYS_OF_THE_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    handleChange = function() {
-      var day_of_month, days, future_date, month, today, week_day, year;
+    DAYS_OF_THE_WEEK = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    MONTHS = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    handleChange = function () {
+      let day_of_month, days, future_date, month, today, week_day, year;
       days = parseInt($(this).val(), 10);
       if (isNaN(days)) {
         days = 0;
@@ -17,10 +45,12 @@
       day_of_month = future_date.getDate();
       month = MONTHS[future_date.getMonth()];
       year = future_date.getFullYear();
-      return $('#future-date').text(week_day + ", " + month + " " + day_of_month + ", " + year);
+      return $("#future-date").text(
+        week_day + ", " + month + " " + day_of_month + ", " + year
+      );
     };
-    handleKeyDown = function(event) {
-      var adjust, new_value;
+    handleKeyDown = function (event) {
+      let adjust, new_value;
       adjust = 0;
       if (event.keyCode === 38) {
         adjust = 1;
@@ -43,19 +73,24 @@
         }
       }
     };
-    handleKeyPress = function(event) {
-      var char;
+    handleKeyPress = function (event) {
+      let char;
       char = String.fromCharCode(event.keyCode);
       if (!char.match(/^[0-9]?$/)) {
         event.preventDefault();
         return $(this).change();
       }
     };
-    hourlyUpdate = function() {
+    hourlyUpdate = function () {
       return $("#number-of-days").change();
     };
-    $("#number-of-days").focus().change(handleChange).keydown(handleKeyDown).keypress(handleKeyPress).keyup(handleChange).change();
+    $("#number-of-days")
+      .focus()
+      .change(handleChange)
+      .keydown(handleKeyDown)
+      .keypress(handleKeyPress)
+      .keyup(handleChange)
+      .change();
     return window.setInterval(hourlyUpdate, one_hour);
   });
-
-}).call(this);
+}.call(this));

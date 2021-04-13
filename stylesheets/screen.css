@@ -1,1 +1,219 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}body,input{background:white;color:#333;font-family:"Open Sans","Arial",sans-serif}kbd{-webkit-border-radius:0.1em;-moz-border-radius:0.1em;-ms-border-radius:0.1em;-o-border-radius:0.1em;border-radius:0.1em;-webkit-box-shadow:rgba(0,0,0,0.2) 0 0.1em 0,#fff 0 0 0 0.2em inset;-moz-box-shadow:rgba(0,0,0,0.2) 0 0.1em 0,#fff 0 0 0 0.2em inset;box-shadow:rgba(0,0,0,0.2) 0 0.1em 0,#fff 0 0 0 0.2em inset;background-color:#f7f7f7;border:0.1em solid #ccc;color:#333;display:inline-block;font-size:0.7em;line-height:1.4;margin:0 .1em;padding:.1em .6em;text-shadow:0 0.2em 0 #fff}#main{font-size:1.2em;margin:3em 1em}#main #number-of-days{font-size:1em;width:3em;border:0.2em solid #eee;-webkit-border-radius:0.3em;-moz-border-radius:0.3em;-ms-border-radius:0.3em;-o-border-radius:0.3em;border-radius:0.3em;text-align:center}#main #number-of-days:focus{outline:none;border-color:#def}#main #future-date{color:#009;white-space:nowrap}.instructions{margin:5em 3em;font-size:0.86em;font-style:italic;color:#666}.touch .instructions{display:none}#main:before,#main:after{content:"";display:table}#main:after{clear:both}#main{text-align:center;zoom:1}#footer{clear:both;position:fixed;width:100%;height:1em;bottom:1em;right:1em;font-size:0.70em;text-align:right;font-family:menlo, monospace}#footer a:link,#footer a:visited{color:blue}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+body,
+input {
+  background: white;
+  color: #333;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+kbd {
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+  border-radius: 0.1em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0.1em 0, #fff 0 0 0 0.2em inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0.1em 0, #fff 0 0 0 0.2em inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0.1em 0, #fff 0 0 0 0.2em inset;
+  background-color: #f7f7f7;
+  border: 0.1em solid #ccc;
+  color: #333;
+  display: inline-block;
+  font-size: 0.7em;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  text-shadow: 0 0.2em 0 #fff;
+}
+#main {
+  font-size: 1.2em;
+  margin: 3em 1em;
+}
+#main #number-of-days {
+  font-size: 1em;
+  width: 3em;
+  border: 0.2em solid #eee;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  text-align: center;
+}
+#main #number-of-days:focus {
+  outline: none;
+  border-color: #def;
+}
+#main #future-date {
+  color: #009;
+  white-space: nowrap;
+}
+.instructions {
+  margin: 5em 3em;
+  font-size: 0.86em;
+  font-style: italic;
+  color: #666;
+}
+.touch .instructions {
+  display: none;
+}
+#main:before,
+#main:after {
+  content: "";
+  display: table;
+}
+#main:after {
+  clear: both;
+}
+#main {
+  text-align: center;
+  zoom: 1;
+}
+#footer {
+  clear: both;
+  position: fixed;
+  width: 100%;
+  height: 1em;
+  bottom: 1em;
+  right: 1em;
+  font-size: 0.7em;
+  text-align: right;
+  font-family: menlo, monospace;
+}
+#footer a:link,
+#footer a:visited {
+  color: blue;
+}
